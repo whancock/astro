@@ -1,0 +1,4 @@
+intelligent(A,B) :-
+   harmonizing(A,venus,uranus), B=nintelligent.
+intelligent(A,B) :-
+   not(harmonizing(A,venus,uranus)), B=yintelligent.

@@ -29,31 +29,30 @@ to what???
 
 :- aleph.
 
-% :- set(i,3).
-% :- set(evalfn, compression).
-% :- set(clauselength,10).
+:- set(tree_type,classification).
 
-:- set(minacc, 0.0).
-:- set(noise, 20).
-
-% :- set(minscore,3).
-% :- set(minpos,3).
-
-% :- set(nodes,5000).
-
-:- set(explore,true).
-% :- set(max_features,10).
+%% :- set(classes,[ydanger, ndanger]).
+%% :- set(classes,[ypacifist, npacifist]).
+:- set(classes,[yintelligent, nintelligent]).
+%% :- set(classes,[ypopular, npopular]).
 
 
-:- set(rulefile, rules).
+:- set(minpos,2).       % minimum examples in leaf for splitting
+:- set(prune_tree,true).
+:- set(confidence,0.25).% pruning conf parameter used by C4.5
+:- set(evalfn,entropy).
+:- set(dependent,2).    % second argument of class/2 is the one to predict
 
+
+:- set(rulefile, treerules).
 
 
 
-:- modeh(1, danger(+car)).
-:- modeh(1, popular(+car)).
-:- modeh(1, intelligent(+car)).
-:- modeh(1, pacifist(+car)).
+
+%% :- modeh(1, danger(+car, -class)).
+%% :- modeh(1, pacifist(+car, -class)).
+:- modeh(1, intelligent(+car, -class)).
+%% :- modeh(1, popular(+car, -class)).
 
 
 :- modeb(1, sign(+car, #sign)).
@@ -69,40 +68,40 @@ to what???
 
 
 
-:- determination(danger/1, sign/2).
-:- determination(danger/1, ascendant/2).
-:- determination(danger/1, blending/3).
-:- determination(danger/1, harmonizing/3).
-:- determination(danger/1, discordant/3).
-:- determination(danger/1, planet/3).
-:- determination(danger/1, houserel/3).
+:- determination(danger/2, sign/2).
+:- determination(danger/2, ascendant/2).
+:- determination(danger/2, blending/3).
+:- determination(danger/2, harmonizing/3).
+:- determination(danger/2, discordant/3).
+:- determination(danger/2, planet/3).
+:- determination(danger/2, houserel/3).
 
 
-:- determination(popular/1, sign/2).
-:- determination(popular/1, ascendant/2).
-:- determination(popular/1, blending/3).
-:- determination(popular/1, harmonizing/3).
-:- determination(popular/1, discordant/3).
-:- determination(popular/1, planet/3).
-:- determination(popular/1, houserel/3).
+:- determination(popular/2, sign/2).
+:- determination(popular/2, ascendant/2).
+:- determination(popular/2, blending/3).
+:- determination(popular/2, harmonizing/3).
+:- determination(popular/2, discordant/3).
+:- determination(popular/2, planet/3).
+:- determination(popular/2, houserel/3).
 
 
-:- determination(intelligent/1, sign/2).
-:- determination(intelligent/1, ascendant/2).
-:- determination(intelligent/1, blending/3).
-:- determination(intelligent/1, harmonizing/3).
-:- determination(intelligent/1, discordant/3).
-:- determination(intelligent/1, planet/3).
-:- determination(intelligent/1, houserel/3).
+:- determination(intelligent/2, sign/2).
+:- determination(intelligent/2, ascendant/2).
+:- determination(intelligent/2, blending/3).
+:- determination(intelligent/2, harmonizing/3).
+:- determination(intelligent/2, discordant/3).
+:- determination(intelligent/2, planet/3).
+:- determination(intelligent/2, houserel/3).
 
 
-:- determination(pacifist/1, sign/2).
-:- determination(pacifist/1, ascendant/2).
-:- determination(pacifist/1, blending/3).
-:- determination(pacifist/1, harmonizing/3).
-:- determination(pacifist/1, discordant/3).
-:- determination(pacifist/1, planet/3).
-:- determination(pacifist/1, houserel/3).
+:- determination(pacifist/2, sign/2).
+:- determination(pacifist/2, ascendant/2).
+:- determination(pacifist/2, blending/3).
+:- determination(pacifist/2, harmonizing/3).
+:- determination(pacifist/2, discordant/3).
+:- determination(pacifist/2, planet/3).
+:- determination(pacifist/2, houserel/3).
 
 
 
@@ -855,72 +854,79 @@ discordant(king, sun, jupiter).
 
 :-begin_in_pos.
 
-danger(lincoln).
-danger(mckinley).
-danger(kennedy).
-danger(garfield).
-danger(karl).
-danger(gandhi).
-danger(king).
 
 
 
-popular(lincoln).
-popular(kennedy).
-popular(obama).
-popular(washington).
-popular(roosevelt).
-popular(gandhi).
+pacifist(gandhi, ypacifist).
+pacifist(mandela, ypacifist).
+pacifist(einstein, ypacifist).
+pacifist(king, ypacifist).
 
 
 
-intelligent(newton).
-intelligent(einstein).
-intelligent(gauss).
-intelligent(euler).
-intelligent(vinci).
-intelligent(obama).
-intelligent(lincoln).
+pacifist(hitler, npacifist).
+pacifist(washington, npacifist).
+pacifist(mckinley, npacifist).
+pacifist(bush, npacifist).
 
 
-pacifist(gandhi).
-pacifist(mandela).
-pacifist(einstein).
-pacifist(king).
+
+popular(lincoln, ypopular).
+popular(kennedy, ypopular).
+popular(obama, ypopular).
+popular(washington, ypopular).
+popular(roosevelt, ypopular).
+popular(gandhi, ypopular).
+
+
+popular(mckinley, npopular).
+popular(garfield, npopular).
+popular(bush, npopular).
+popular(hitler, npopular).
+popular(trump, npopular).
+
+
+
+danger(lincoln, ydanger).
+danger(mckinley, ydanger).
+danger(kennedy, ydanger).
+danger(garfield, ydanger).
+danger(karl, ydanger).
+danger(gandhi, ydanger).
+danger(king, ydanger).
+
+
+danger(obama, ndanger).
+danger(bush, ndanger).
+danger(roosevelt, ndanger).
+danger(washington, ndanger).
+danger(trump, ndanger).
+danger(einstein, ndanger).
+
+
+
+
+
+
+intelligent(newton, yintelligent).
+intelligent(einstein, yintelligent).
+intelligent(gauss, yintelligent).
+intelligent(euler, yintelligent).
+intelligent(vinci, yintelligent).
+intelligent(obama, yintelligent).
+intelligent(lincoln, yintelligent).
+
+
+intelligent(bush, nintelligent).
+intelligent(trump, nintelligent).
+intelligent(bachmann, nintelligent).
+intelligent(gandhi, nintelligent).
+intelligent(mckinley, nintelligent).
 
 
 
 :-end_in_pos.
 :-begin_in_neg.
-
-
-danger(obama).
-danger(bush).
-danger(roosevelt).
-danger(washington).
-danger(trump).
-danger(einstein).
-
-
-
-popular(mckinley).
-popular(garfield).
-popular(bush).
-popular(hitler).
-popular(trump).
-
-
-intelligent(bush).
-intelligent(trump).
-intelligent(bachmann).
-intelligent(gandhi).
-intelligent(mckinley).
-
-
-pacifist(hitler).
-pacifist(washington).
-pacifist(mckinley).
-pacifist(bush).
 
 
 
