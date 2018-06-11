@@ -83,8 +83,8 @@ def get_rules_for_page(page):
 	return rules
 
 
-
-page = "https://www.zodiacsignastrology.org/birth-chart/archduke-of-austria-franz-karl/"
+page = "https://www.zodiacsignastrology.org/birth-chart/martin-luther-king/"
+# page = "https://www.zodiacsignastrology.org/birth-chart/archduke-of-austria-franz-karl/"
 # page = "https://www.zodiacsignastrology.org/birth-chart/adolf-hitler/"
 # page = "https://www.zodiacsignastrology.org/birth-chart/george-washington/"
 # page = "https://www.zodiacsignastrology.org/birth-chart/james-garfield/"

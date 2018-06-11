@@ -520,6 +520,25 @@ houserel(karl, neptune, 6).
 planet(karl, saturn, virgo).
 
 
+%% mlk
+sign(king, capricorn).
+planet(king, mercury, aquarius).
+discordant(king, mars, saturn).
+planet(king, saturn, sagittarius).
+discordant(king, sun, pluto).
+planet(king, moon, pisces).
+planet(king, jupiter, taurus).
+harmonizing(king, saturn, neptune).
+planet(king, mars, gemini).
+car(king).
+harmonizing(king, jupiter, saturn).
+planet(king, sun, capricorn).
+planet(king, venus, pisces).
+discordant(king, sun, jupiter).
+ascendant(king, ).
+
+
+
 :-end_bg.
 
 :-begin_in_pos.
@@ -529,6 +548,7 @@ danger(mckinley).
 danger(kennedy).
 danger(garfield).
 danger(karl).
+danger(king).
 
 
 
@@ -537,6 +557,7 @@ popular(kennedy).
 popular(obama).
 popular(washington).
 popular(roosevelt).
+popular(king).
 
 
 
