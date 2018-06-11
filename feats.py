@@ -49,7 +49,7 @@ def process_relation(person, string):
 def get_rules_for_page(page):
 
 	result = requests.get(page)
-	soup = BeautifulSoup(result.content, "lxml")
+	soup = BeautifulSoup(result.content, "html5lib")
 
 
 	rules = set()
@@ -84,7 +84,16 @@ def get_rules_for_page(page):
 
 
 
-page = "https://www.zodiacsignastrology.org/birth-chart/archduke-of-austria-franz-karl/"
+page = "https://www.zodiacsignastrology.org/birth-chart/michele-bachmann/"
+#page = "https://www.zodiacsignastrology.org/birth-chart/barron-trump/"
+#page = "https://www.zodiacsignastrology.org/birth-chart/leonardo-da-vinci/"
+# page = "https://www.zodiacsignastrology.org/birth-chart/sir-isaac-newton/"
+# page = "https://www.zodiacsignastrology.org/birth-chart/leonhard-euler/"
+# page = "https://www.zodiacsignastrology.org/birth-chart/carl-friedrich-gauss/"
+# page = "https://www.zodiacsignastrology.org/birth-chart/albert-einstein/"
+# page = "https://www.zodiacsignastrology.org/birth-chart/nelson-mandela/"
+# page = "https://www.zodiacsignastrology.org/birth-chart/mohandas-gandhi/"
+# page = "https://www.zodiacsignastrology.org/birth-chart/archduke-of-austria-franz-karl/"
 # page = "https://www.zodiacsignastrology.org/birth-chart/adolf-hitler/"
 # page = "https://www.zodiacsignastrology.org/birth-chart/george-washington/"
 # page = "https://www.zodiacsignastrology.org/birth-chart/james-garfield/"

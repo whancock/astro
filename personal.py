@@ -82,15 +82,7 @@ def get_rules_for_page(pagesoup):
 				rules.add('houserel({}, {}, {})'.format(person, sign, num))
 
 
-
-
 	return rules
-
-
-
-
-	
-
 
 
 

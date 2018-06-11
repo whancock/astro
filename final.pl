@@ -50,8 +50,10 @@ to what???
 
 
 
-%% :- modeh(1, danger(+car)).
+:- modeh(1, danger(+car)).
 :- modeh(1, popular(+car)).
+:- modeh(1, intelligent(+car)).
+:- modeh(1, pacifist(+car)).
 
 
 :- modeb(1, sign(+car, #sign)).
@@ -76,9 +78,6 @@ to what???
 :- determination(danger/1, houserel/3).
 
 
-
-
-
 :- determination(popular/1, sign/2).
 :- determination(popular/1, ascendant/2).
 :- determination(popular/1, blending/3).
@@ -87,6 +86,23 @@ to what???
 :- determination(popular/1, planet/3).
 :- determination(popular/1, houserel/3).
 
+
+:- determination(intelligent/1, sign/2).
+:- determination(intelligent/1, ascendant/2).
+:- determination(intelligent/1, blending/3).
+:- determination(intelligent/1, harmonizing/3).
+:- determination(intelligent/1, discordant/3).
+:- determination(intelligent/1, planet/3).
+:- determination(intelligent/1, houserel/3).
+
+
+:- determination(pacifist/1, sign/2).
+:- determination(pacifist/1, ascendant/2).
+:- determination(pacifist/1, blending/3).
+:- determination(pacifist/1, harmonizing/3).
+:- determination(pacifist/1, discordant/3).
+:- determination(pacifist/1, planet/3).
+:- determination(pacifist/1, houserel/3).
 
 
 
@@ -520,6 +536,306 @@ houserel(karl, neptune, 6).
 planet(karl, saturn, virgo).
 
 
+
+
+% gandhi
+harmonizing(gandhi, jupiter, uranus).
+houserel(gandhi, mercury, 1).
+planet(gandhi, saturn, sagittarius).
+sign(gandhi, libra).
+harmonizing(gandhi, venus, uranus).
+houserel(gandhi, sun, 1).
+ascendant(gandhi, libra).
+harmonizing(gandhi, uranus, pluto).
+houserel(gandhi, mars, 2).
+houserel(gandhi, pluto, 8).
+harmonizing(gandhi, moon, neptune).
+blending(gandhi, jupiter, pluto).
+planet(gandhi, venus, scorpio).
+planet(gandhi, mars, scorpio).
+houserel(gandhi, saturn, 3).
+houserel(gandhi, jupiter, 8).
+harmonizing(gandhi, sun, saturn).
+discordant(gandhi, moon, venus).
+discordant(gandhi, moon, jupiter).
+discordant(gandhi, moon, pluto).
+discordant(gandhi, uranus, neptune).
+planet(gandhi, moon, leo).
+discordant(gandhi, mars, jupiter).
+planet(gandhi, mercury, scorpio).
+planet(gandhi, jupiter, taurus).
+discordant(gandhi, venus, jupiter).
+blending(gandhi, venus, mars).
+planet(gandhi, sun, libra).
+car(gandhi).
+harmonizing(gandhi, mars, uranus).
+discordant(gandhi, mars, pluto).
+discordant(gandhi, moon, mars).
+houserel(gandhi, moon, 11).
+houserel(gandhi, uranus, 10).
+houserel(gandhi, neptune, 7).
+houserel(gandhi, venus, 2).
+harmonizing(gandhi, moon, saturn).
+discordant(gandhi, venus, pluto).
+
+
+
+% mandela
+planet(mandela, saturn, leo).
+ascendant(mandela, sagittarius).
+blending(mandela, jupiter, pluto).
+harmonizing(mandela, mercury, mars).
+harmonizing(mandela, mars, saturn).
+harmonizing(mandela, sun, moon).
+planet(mandela, sun, cancer).
+discordant(mandela, moon, uranus).
+car(mandela).
+houserel(mandela, saturn, 9).
+houserel(mandela, pluto, 7).
+harmonizing(mandela, venus, uranus).
+discordant(mandela, moon, mercury).
+planet(mandela, venus, gemini).
+harmonizing(mandela, jupiter, uranus).
+planet(mandela, jupiter, cancer).
+houserel(mandela, mercury, 9).
+planet(mandela, moon, scorpio).
+houserel(mandela, jupiter, 7).
+blending(mandela, mercury, saturn).
+houserel(mandela, venus, 6).
+houserel(mandela, sun, 8).
+sign(mandela, cancer).
+houserel(mandela, mars, 11).
+houserel(mandela, uranus, 3).
+houserel(mandela, moon, 12).
+houserel(mandela, neptune, 8).
+discordant(mandela, moon, saturn).
+planet(mandela, mercury, leo).
+planet(mandela, mars, libra).
+
+
+
+% einstein
+houserel(einstein, venus, 11).
+planet(einstein, mercury, aries).
+houserel(einstein, mars, 8).
+harmonizing(einstein, sun, mars).
+houserel(einstein, jupiter, 9).
+houserel(einstein, moon, 6).
+houserel(einstein, pluto, 11).
+planet(einstein, saturn, aries).
+harmonizing(einstein, mars, pluto).
+planet(einstein, mars, capricorn).
+car(einstein).
+houserel(einstein, uranus, 3).
+houserel(einstein, saturn, 10).
+blending(einstein, mercury, saturn).
+planet(einstein, venus, aries).
+harmonizing(einstein, moon, venus).
+houserel(einstein, sun, 10).
+discordant(einstein, jupiter, pluto).
+harmonizing(einstein, sun, pluto).
+planet(einstein, jupiter, aquarius).
+sign(einstein, pisces).
+houserel(einstein, neptune, 11).
+houserel(einstein, mercury, 10).
+planet(einstein, moon, sagittarius).
+planet(einstein, sun, pisces).
+ascendant(einstein, cancer).
+discordant(einstein, jupiter, uranus).
+
+
+
+
+
+% gauss
+sign(gauss, taurus).
+planet(gauss, saturn, libra).
+harmonizing(gauss, neptune, pluto).
+harmonizing(gauss, jupiter, neptune).
+planet(gauss, jupiter, cancer).
+car(gauss).
+planet(gauss, mars, libra).
+discordant(gauss, saturn, pluto).
+planet(gauss, sun, taurus).
+planet(gauss, mercury, taurus).
+harmonizing(gauss, mercury, jupiter).
+blending(gauss, sun, mercury).
+planet(gauss, venus, gemini).
+
+
+
+
+% euler
+car(euler).
+planet(euler, mars, cancer).
+planet(euler, venus, pisces).
+sign(euler, aries).
+planet(euler, saturn, gemini).
+discordant(euler, mercury, uranus).
+harmonizing(euler, mercury, venus).
+planet(euler, jupiter, leo).
+harmonizing(euler, neptune, pluto).
+harmonizing(euler, jupiter, neptune).
+harmonizing(euler, sun, jupiter).
+harmonizing(euler, venus, mars).
+planet(euler, mercury, taurus).
+harmonizing(euler, sun, pluto).
+planet(euler, sun, aries).
+blending(euler, jupiter, pluto).
+
+
+
+% newton
+houserel(newton, venus, 4).
+discordant(newton, venus, uranus).
+harmonizing(newton, saturn, uranus).
+houserel(newton, pluto, 8).
+houserel(newton, neptune, 2).
+planet(newton, saturn, pisces).
+ascendant(newton, libra).
+planet(newton, sun, capricorn).
+planet(newton, jupiter, pisces).
+houserel(newton, mars, 7).
+planet(newton, mercury, sagittarius).
+planet(newton, mars, taurus).
+sign(newton, capricorn).
+houserel(newton, jupiter, 5).
+blending(newton, moon, venus).
+discordant(newton, mercury, jupiter).
+harmonizing(newton, jupiter, uranus).
+harmonizing(newton, sun, mars).
+houserel(newton, mercury, 2).
+planet(newton, moon, aquarius).
+houserel(newton, moon, 4).
+discordant(newton, neptune, pluto).
+houserel(newton, sun, 3).
+planet(newton, venus, aquarius).
+car(newton).
+houserel(newton, saturn, 5).
+discordant(newton, moon, uranus).
+houserel(newton, uranus, 2).
+harmonizing(newton, moon, mercury).
+
+
+
+% da vinci
+planet(vinci, mercury, aries).
+houserel(vinci, moon, 12).
+houserel(vinci, venus, 6).
+harmonizing(vinci, mars, saturn).
+planet(vinci, jupiter, aquarius).
+houserel(vinci, mars, 3).
+discordant(vinci, mars, pluto).
+houserel(vinci, jupiter, 3).
+planet(vinci, moon, scorpio).
+harmonizing(vinci, mercury, pluto).
+discordant(vinci, sun, uranus).
+houserel(vinci, pluto, 8).
+planet(vinci, saturn, libra).
+harmonizing(vinci, mercury, mars).
+sign(vinci, aries).
+houserel(vinci, mercury, 4).
+planet(vinci, venus, taurus).
+harmonizing(vinci, neptune, pluto).
+discordant(vinci, moon, venus).
+harmonizing(vinci, sun, jupiter).
+houserel(vinci, uranus, 8).
+houserel(vinci, neptune, 10).
+ascendant(vinci, scorpio).
+discordant(vinci, venus, mars).
+discordant(vinci, moon, mars).
+planet(vinci, sun, aries).
+planet(vinci, mars, aquarius).
+houserel(vinci, saturn, 10).
+car(vinci).
+houserel(vinci, sun, 5).
+
+
+
+
+% trump
+houserel(trump, venus, 12).
+blending(trump, venus, neptune).
+houserel(trump, mercury, 12).
+houserel(trump, pluto, 10).
+houserel(trump, uranus, 12).
+blending(trump, mercury, uranus).
+houserel(trump, saturn, 5).
+harmonizing(trump, moon, saturn).
+car(trump).
+ascendant(trump, pisces).
+sign(trump, pisces).
+planet(trump, saturn, leo).
+houserel(trump, moon, 9).
+houserel(trump, neptune, 12).
+planet(trump, venus, aquarius).
+houserel(trump, sun, 1).
+planet(trump, moon, sagittarius).
+harmonizing(trump, mercury, jupiter).
+planet(trump, mars, gemini).
+harmonizing(trump, venus, mars).
+discordant(trump, jupiter, neptune).
+planet(trump, mercury, pisces).
+discordant(trump, sun, pluto).
+harmonizing(trump, mars, neptune).
+houserel(trump, mars, 3).
+discordant(trump, venus, jupiter).
+houserel(trump, jupiter, 8).
+planet(trump, jupiter, scorpio).
+harmonizing(trump, sun, saturn).
+discordant(trump, mars, uranus).
+harmonizing(trump, sun, moon).
+planet(trump, sun, pisces).
+discordant(trump, mercury, mars).
+
+
+
+
+% michelle bachmann
+houserel(bachmann, neptune, 4).
+discordant(bachmann, sun, mars).
+harmonizing(bachmann, neptune, pluto).
+houserel(bachmann, mars, 6).
+discordant(bachmann, mars, neptune).
+houserel(bachmann, uranus, 12).
+discordant(bachmann, moon, venus).
+houserel(bachmann, sun, 10).
+ascendant(bachmann, leo).
+discordant(bachmann, uranus, neptune).
+planet(bachmann, mars, capricorn).
+planet(bachmann, jupiter, leo).
+harmonizing(bachmann, sun, jupiter).
+houserel(bachmann, pluto, 2).
+houserel(bachmann, saturn, 5).
+planet(bachmann, saturn, sagittarius).
+harmonizing(bachmann, mercury, jupiter).
+harmonizing(bachmann, venus, uranus).
+car(bachmann).
+harmonizing(bachmann, moon, neptune).
+discordant(bachmann, moon, saturn).
+houserel(bachmann, venus, 11).
+discordant(bachmann, mars, uranus).
+sign(bachmann, aries).
+harmonizing(bachmann, moon, mercury).
+discordant(bachmann, venus, saturn).
+blending(bachmann, jupiter, pluto).
+harmonizing(bachmann, sun, moon).
+houserel(bachmann, moon, 8).
+harmonizing(bachmann, saturn, uranus).
+planet(bachmann, mercury, aries).
+planet(bachmann, sun, aries).
+discordant(bachmann, saturn, pluto).
+houserel(bachmann, jupiter, 2).
+discordant(bachmann, moon, jupiter).
+houserel(bachmann, mercury, 10).
+planet(bachmann, moon, aquarius).
+planet(bachmann, venus, gemini).
+discordant(bachmann, moon, pluto).
+blending(bachmann, sun, mercury).
+
+
+
+
 :-end_bg.
 
 :-begin_in_pos.
@@ -529,6 +845,7 @@ danger(mckinley).
 danger(kennedy).
 danger(garfield).
 danger(karl).
+danger(gandhi).
 
 
 
@@ -537,6 +854,23 @@ popular(kennedy).
 popular(obama).
 popular(washington).
 popular(roosevelt).
+popular(gandhi).
+popular(king).
+
+
+
+intelligent(newton).
+intelligent(einstein).
+intelligent(gauss).
+intelligent(euler).
+intelligent(vinci).
+intelligent(obama).
+intelligent(lincoln).
+
+
+pacifist(gandhi).
+pacifist(mandela).
+pacifist(einstein).
 
 
 
@@ -548,6 +882,8 @@ danger(obama).
 danger(bush).
 danger(roosevelt).
 danger(washington).
+danger(trump).
+danger(einstein).
 
 
 
@@ -555,6 +891,20 @@ popular(mckinley).
 popular(garfield).
 popular(bush).
 popular(hitler).
+popular(trump).
+
+
+intelligent(bush).
+intelligent(trump).
+intelligent(bachmann).
+intelligent(gandhi).
+intelligent(mckinley).
+
+
+pacifist(hitler).
+pacifist(washington).
+pacifist(mckinley).
+pacifist(bush).
 
 
 

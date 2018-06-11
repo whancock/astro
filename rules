@@ -1,9 +1,15 @@
-danger(lincoln).
-danger(mckinley).
-danger(kennedy).
-danger(garfield).
+danger(A) :-
+   harmonizing(A,uranus,pluto).
+danger(A) :-
+   ascendant(A,libra).
 danger(karl).
 popular(A) :-
    harmonizing(A,moon,jupiter).
-popular(washington).
+popular(A) :-
+   discordant(A,uranus,neptune).
 popular(roosevelt).
+popular(king).
+intelligent(A).
+pacifist(A) :-
+   blending(A,jupiter,pluto).
+pacifist(einstein).
