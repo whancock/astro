@@ -536,6 +536,7 @@ houserel(karl, neptune, 6).
 planet(karl, saturn, virgo).
 
 
+<<<<<<< HEAD
 
 
 % gandhi
@@ -833,6 +834,24 @@ planet(bachmann, venus, gemini).
 discordant(bachmann, moon, pluto).
 blending(bachmann, sun, mercury).
 
+=======
+%% mlk
+sign(king, capricorn).
+planet(king, mercury, aquarius).
+discordant(king, mars, saturn).
+planet(king, saturn, sagittarius).
+discordant(king, sun, pluto).
+planet(king, moon, pisces).
+planet(king, jupiter, taurus).
+harmonizing(king, saturn, neptune).
+planet(king, mars, gemini).
+car(king).
+harmonizing(king, jupiter, saturn).
+planet(king, sun, capricorn).
+planet(king, venus, pisces).
+discordant(king, sun, jupiter).
+ascendant(king, ).
+>>>>>>> 1464b7e792d2a6b0e0122e4a02d206d9e6dbc07f
 
 
 
@@ -845,7 +864,11 @@ danger(mckinley).
 danger(kennedy).
 danger(garfield).
 danger(karl).
+<<<<<<< HEAD
 danger(gandhi).
+=======
+danger(king).
+>>>>>>> 1464b7e792d2a6b0e0122e4a02d206d9e6dbc07f
 
 
 
@@ -854,6 +877,7 @@ popular(kennedy).
 popular(obama).
 popular(washington).
 popular(roosevelt).
+<<<<<<< HEAD
 popular(gandhi).
 popular(king).
 
@@ -871,6 +895,9 @@ intelligent(lincoln).
 pacifist(gandhi).
 pacifist(mandela).
 pacifist(einstein).
+=======
+popular(king).
+>>>>>>> 1464b7e792d2a6b0e0122e4a02d206d9e6dbc07f
 
 
 

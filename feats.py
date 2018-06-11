@@ -83,6 +83,7 @@ def get_rules_for_page(page):
 	return rules
 
 
+<<<<<<< HEAD
 
 page = "https://www.zodiacsignastrology.org/birth-chart/michele-bachmann/"
 #page = "https://www.zodiacsignastrology.org/birth-chart/barron-trump/"
@@ -93,6 +94,9 @@ page = "https://www.zodiacsignastrology.org/birth-chart/michele-bachmann/"
 # page = "https://www.zodiacsignastrology.org/birth-chart/albert-einstein/"
 # page = "https://www.zodiacsignastrology.org/birth-chart/nelson-mandela/"
 # page = "https://www.zodiacsignastrology.org/birth-chart/mohandas-gandhi/"
+=======
+page = "https://www.zodiacsignastrology.org/birth-chart/martin-luther-king/"
+>>>>>>> 1464b7e792d2a6b0e0122e4a02d206d9e6dbc07f
 # page = "https://www.zodiacsignastrology.org/birth-chart/archduke-of-austria-franz-karl/"
 # page = "https://www.zodiacsignastrology.org/birth-chart/adolf-hitler/"
 # page = "https://www.zodiacsignastrology.org/birth-chart/george-washington/"
